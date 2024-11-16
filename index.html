@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Phab Cafeteria</title>
+  </head>
+  <body>
+    <div class="caixa-video">
+      <video src="./videos/coffe.mp4" loop muted autoplay></video>
+      <div class="mascara"></div>
+    </div>
+
+    <header class="header">
+      <section>
+        <a href="#">
+          <img src="./img/logo 2.png" alt="logo-cafeteria" />
+        </a>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Sobre</a>
+          <a href="#" onclick="mostraModal()">Endereço</a>
+        </nav>
+      </section>
+    </header>
+
+    <section class="caixa-principal">
+      <div>
+        <h3>O Melhor café da Regiao</h3>
+        <p>
+          Nosso café é uma experiência única, com grãos selecionados e torrados
+          na medida certa para um sabor encorpado e suave. Cada xícara traz a
+          perfeição que você merece, seja para começar o dia ou relaxar no meio
+          da tarde. Se você busca qualidade, o nosso café é a escolha certa.
+          Venha descobrir o melhor sabor em cada gole!
+        </p>
+        <a class="boatao-link">Peça já o Seu</a>
+      </div>
+    </section>
+    <section class="caixa-sobre">
+      <h2 class="titulo"><span>Sobre</span> Nós</h2>
+      <div class="sobre-container">
+        <div class="sobre-imagem">
+          <img src="./img/about-img.jpeg" alt="imagem-café" />
+        </div>
+        <div class="sobre-texto">
+          <h3>O que faz nosso Cafe especial</h3>
+          <p>
+            O café especial é cultivado com grãos selecionados, em solos férteis
+            e sob condições ideais, garantindo um sabor único e encorpado. O
+            processo de torrefação é cuidadosamente controlado para preservar
+            suas notas aromáticas. Cada xícara oferece uma experiência rica e
+            única, que valoriza a qualidade e o sabor autêntico do café.
+          </p>
+
+          <p>
+            A Phab Cafeteria, em Curitiba-PR, nasceu em 2024 para oferecer cafés
+            especiais em um ambiente moderno e acolhedor. Seu cardápio mistura
+            clássicos e inovações, com grãos selecionados para agradar aos
+            paladares mais exigentes. Um refúgio perfeito para quem busca sabor
+            e boas conversas
+          </p>
+          <a class="boatao-link">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+    <div class="modal">
+      <h3 class="titulo"><span>Nosso</span> Endereço</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230484.21422883865!2d-49.5851752730355!3d-25.494510772390566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce35351cdb3dd%3A0x6d2f6ba5bacbe809!2sCuritiba%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1731734653135!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="mascara-modal" onclick="esconderModal()"></div>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
